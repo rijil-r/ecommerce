@@ -3,6 +3,8 @@ from rest_framework import viewsets, status
 from rest_framework.permissions import IsAdminUser
 from rest_framework.response import Response
 
+from shopping_cart.serializers import UserSerializer
+
 
 class UserViewSet(viewsets.ModelViewSet):
     """
