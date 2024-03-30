@@ -1,6 +1,6 @@
 # Django Application
 
-This is a Django application designed to [briefly describe the purpose of your application].
+A sample shopping cart application made using Django.
 
 ## Installation
 
