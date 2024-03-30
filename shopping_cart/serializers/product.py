@@ -6,4 +6,4 @@ from shopping_cart.models import Product
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
-        fields = '__all__'
+        fields = ['id', 'name', 'price', 'description', 'image', 'category']

@@ -6,4 +6,4 @@ from shopping_cart.models import Payment
 class PaymentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Payment
-        fields = '__all__'
+        fields = ['id', 'order', 'status', 'method', 'created_at']
