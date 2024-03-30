@@ -24,5 +24,6 @@ Before you begin, ensure you have met the following requirements:
 
 For REST API URLs go to http://127.0.0.1:8000/api/ 
 
--- The code is well documented and easy to understand.
+-- The code is well-documented and easy to understand.
+
 -- Django application includes REST APIs and uses JSON Web Token (JWT) for authentication.
