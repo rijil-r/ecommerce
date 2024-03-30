@@ -17,7 +17,7 @@ class Order(ActivityLogger):
 
     @property
     def status(self):
-        if self.payment:
+        if hasattr(self, 'payment'):
             return self.payment.status
         return 'Pending'
 
@@ -25,10 +25,16 @@ class Order(ActivityLogger):
 class OrderProduct(ActivityLogger):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     quantity = models.IntegerField(default=1)
-    order = models.ForeignKey(Order, related_name='products', on_delete=models.CASCADE)
+    order = models.ManyToManyField(Order, related_name='products')
+
+
+    class Meta:
+        unique_together = ['product', 'quantity']
 
     def __str__(self):
         return f'{self.product.name} x {self.quantity}'
+
+
 
     @property
     def total(self):
