@@ -15,7 +15,8 @@ Before you begin, ensure you have met the following requirements:
 - Run - pip install -r requirements.txt
 - Run - python manage.py makemigrations
 - Run - python manage.py migrate
-- I've created a custom management command to add some sample data for that run - python manage.py add_data
+- I've created a custom management command to add some sample data. Run - python manage.py add_data
+- After that run python manage.py runserver and you'll be good to go.
 
   admin user
   - Username - admin
