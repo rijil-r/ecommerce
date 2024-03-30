@@ -8,7 +8,10 @@ from shopping_cart.views.product import ProductViewSet
 from shopping_cart.views.home import HomeView
 from shopping_cart.views.user import UserViewSet
 
+# Create a default router
 router = DefaultRouter()
+
+# Register the viewsets with the router
 router.register('orders', OrderModelViewSet, basename='order')
 router.register('admin/orders', OrderAdminModelViewSet, basename='admin-order')
 router.register('payments', PaymentViewSet, basename='payment')
