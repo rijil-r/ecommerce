@@ -1,6 +1,6 @@
 # Django Application
 
-This is a Django application designed to [briefly describe the purpose of your application].
+A sample shopping cart application made using Django.
 
 ## Installation
 
@@ -15,7 +15,8 @@ Before you begin, ensure you have met the following requirements:
 - Run - pip install -r requirements.txt
 - Run - python manage.py makemigrations
 - Run - python manage.py migrate
-- I've created a custom management command to add some sample data for that run - python manage.py add_data
+- I've created a custom management command to add some sample data. Run - python manage.py add_data
+- After that run python manage.py runserver and you'll be good to go.
 
   admin user
   - Username - admin
@@ -23,5 +24,6 @@ Before you begin, ensure you have met the following requirements:
 
 For REST API URLs go to http://127.0.0.1:8000/api/ 
 
--- The code is well documented and easy to understand.
+-- The code is well-documented and easy to understand.
+
 -- Django application includes REST APIs and uses JSON Web Token (JWT) for authentication.
